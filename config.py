@@ -12,9 +12,9 @@ db_config = {
 
 
 page_config = {
-    "brand_name":'51Reboot',
-    'title':'hello reboot',
-    "favicon":'https://pic1.zhimg.com/6d660dd4156c64bfad13ff97d79c2f98_l.jpg',
+    "brand_name":'Aladin-CMDB',
+    'title':'Aladin',
+    # "favicon":'https://pic1.zhimg.com/6d660dd4156c64bfad13ff97d79c2f98_l.jpg',
     "menu":[
         {
             # user配置最好不要修改，是和登陆认证相关的，直接在下面加配置即可
