@@ -1,0 +1,15 @@
+
+{% extends "layout.html" %}
+{% block body %}
+{% endblock %}
+    
+{% block js %}
+    <script>	
+        $(function() {
+            $.rebootOps(
+              {"data": [{"name": "name", "title": "\u8bbe\u5907\u540d"}], "name": "hardware", "title": "\u8bbe\u5907"}
+            )
+        })
+    </script>
+{% endblock %}
+

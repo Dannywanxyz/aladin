@@ -1,0 +1,15 @@
+
+{% extends "layout.html" %}
+{% block body %}
+{% endblock %}
+    
+{% block js %}
+    <script>	
+        $(function() {
+            $.rebootOps(
+              {"data": [{"select_type": "hardware", "type": "select", "name": "asset", "title": "\u8bbe\u5907\u540d\u79f0"}, {"name": "asset_no", "title": "\u8bbe\u5907\u7f16\u53f7"}, {"type": "select", "name": "asset_type", "value": {"0": "\u578b\u53f71", "1": "\u578b\u53f72"}, "title": "\u8bbe\u5907\u578b\u53f7"}, {"name": "amount", "title": "\u6570\u91cf"}, {"type": "date", "name": "purchase_time", "title": "\u91c7\u8d2d\u65e5\u671f"}, {"type": "select", "name": "purchase_department", "value": {"0": "\u90e8\u95e81", "1": "\u90e8\u95e82"}, "title": "\u91c7\u8d2d\u5355\u4f4d"}, {"name": "configuration", "title": "\u914d\u7f6e"}, {"type": "date", "name": "putintouse_time", "title": "\u6295\u5165\u4f7f\u7528\u65f6\u95f4"}, {"type": "select", "name": "applying_department", "value": {"0": "\u90e8\u95e81", "1": "\u90e8\u95e82"}, "title": "\u4f7f\u7528\u90e8\u95e8"}, {"name": "applying_employee", "title": "\u4f7f\u7528\u4eba"}, {"type": "select", "name": "ups", "value": {"0": "\u5f00\u542f", "1": "\u5173\u95ed"}, "title": "\u662f\u5426\u5f00\u542f"}], "name": "asset", "title": "\u56fa\u5b9a\u8d44\u4ea7\u767b\u8bb0\u8868"}
+            )
+        })
+    </script>
+{% endblock %}
+

@@ -20,6 +20,7 @@ class DB:
         self.conn = MySQLdb.connect(host=self.host, user=self.mysql_user, passwd=self.mysql_pass, db=self.mysql_db, charset="utf8", connect_timeout=600, compress=True,cursorclass = MySQLdb.cursors.DictCursor)
         self.conn.autocommit(True)
     def execute(self, sql):
+        global cursor
         try:
             cursor = self.conn.cursor()
             cursor.execute(sql)
